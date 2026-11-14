@@ -544,12 +544,12 @@ FlowerBox – новый продукт: сейчас магазин прини�
 | Requirement ID | Verification Method | Test/Artifact Link | Status | Evidence |
 |----------------|---------------------|--------------------|--------|----------|
 | REQ-INT-001 | Demonstration | Сценарий «заказ готового букета» | Planned | |
-| REQ-INT-002 | Demonstration | Мокап `img/fig_main.png` | WIP | Мокап согласован |
+| REQ-INT-002 | Demonstration | Прототип `img/p1_login_main_catalog.png` | WIP | Прототип согласован |
 | REQ-INT-003 | Test | tests/empty-states.md | Planned | |
 | REQ-INT-004 | Test | tests/screens.md | Planned | |
 | REQ-INT-005 | Test | tests/network-errors.md | Planned | |
 | REQ-FUNC-001 | Test | tests/login.md | Planned | |
-| REQ-FUNC-002 | Demonstration | Мокап `img/fig_main.png` | WIP | Мокап согласован |
+| REQ-FUNC-002 | Demonstration | Прототип `img/p1_login_main_catalog.png` | WIP | Прототип согласован |
 | REQ-FUNC-003 | Test | tests/catalog-filters.md | Planned | |
 | REQ-FUNC-004 | Test | tests/product-card.md | Planned | |
 | REQ-FUNC-005 | Test | tests/builder-flowers.md | Planned | |
@@ -557,7 +557,7 @@ FlowerBox – новый продукт: сейчас магазин прини�
 | REQ-FUNC-007 | Test | tests/builder-packaging.md | Planned | |
 | REQ-FUNC-008 | Test | tests/cart.md | Planned | |
 | REQ-FUNC-009 | Test | tests/checkout.md | Planned | |
-| REQ-FUNC-010 | Demonstration | Мокап `img/fig_track.png` | WIP | |
+| REQ-FUNC-010 | Demonstration | Прототип `img/p3_checkout_tracking_profile.png` | WIP | |
 | REQ-FUNC-011 | Test | tests/reminders.md | Planned | |
 | REQ-FUNC-012 | Test | tests/favorites.md | Planned | |
 | REQ-FUNC-013 | Test | tests/notifications.md | Planned | |
@@ -591,39 +591,47 @@ FlowerBox – новый продукт: сейчас магазин прини�
 
 Текст модели: [`flowerbox.sysml`](flowerbox.sysml).
 
-**Варианты использования покупателя**
+Диаграммы построены по текстовой модели в графической нотации SysML v2 (general view, interconnection view, action flow, state transition). Исходники диаграмм и прототипов – в каталоге [`img/src/`](img/src/).
 
-![Варианты использования FlowerBox](img/sysml_uc.png)
+**Варианты использования (use case def / use case)**
+
+![Варианты использования FlowerBox](img/d1_uc.png)
+
+**Бизнес-цели и функциональные требования («dependency»)**
+
+![Цели и требования](img/d2_goals.png)
 
 **Требования и отношения satisfy**
 
-![Требования и satisfy](img/sysml_req.png)
+![Требования и satisfy](img/d3_satisfy.png)
 
-**Структура графического интерфейса**
+**Структура системы: части, порты, интерфейс**
 
-![Структура GUI](img/sysml_gui.png)
+![Структура системы](img/d4_struct.png)
 
-### 5.2 Мокапы интерфейса
+**Поведение: шаги конструктора, состояния заказа и навигации**
 
-**Главный экран, каталог, карточка букета**
+![Поведение](img/d5_behavior.png)
 
-![Главная, каталог, карточка](img/fig_main.png)
+### 5.2 Прототипы интерфейса
 
-**Конструктор букета: цветы, расположение, упаковка**
+Прототипы выполнены в виде эскизов; над каждым экраном указана часть модели (`part … : Screen`), которую он изображает.
 
-![Конструктор](img/fig_builder.png)
+**Вход, главный экран, каталог**
 
-**Корзина, оформление заказа, подтверждение**
+![Вход, главная, каталог](img/p1_login_main_catalog.png)
 
-![Корзина и оформление](img/fig_cart.png)
+**Карточка букета, конструктор, корзина**
 
-**Отслеживание заказа, уведомления, важные даты**
+![Карточка, конструктор, корзина](img/p2_product_builder_cart.png)
 
-![Отслеживание, уведомления, даты](img/fig_track.png)
+**Оформление заказа, отслеживание, профиль**
 
-**Приветствие, вход, избранное**
+![Оформление, отслеживание, профиль](img/p3_checkout_tracking_profile.png)
 
-![Приветствие, вход, избранное](img/fig_start.png)
+**Панель флориста**
+
+![Панель флориста](img/p4_florist_panel.png)
 
 ### 5.3 Риски
 
